@@ -1,0 +1,21 @@
+/* Navs */
+ul {
+	&.nav-list.primary > li {
+		margin: 0;
+		padding: 0;
+		a {
+			@include transition (all 0.3s);
+			background-image: url(../img/list-primary.png);
+			background-position: 9px 16px;
+			background-repeat: no-repeat;
+			border-bottom: 1px solid #EDEDDE;
+			padding: 8px 20px;
+		}
+	}
+	&.nav-pills > li.active > a {
+		background-color: #CCC;
+		&:hover, &:focus {
+			background-color: #CCC;
+		}
+	}
+}

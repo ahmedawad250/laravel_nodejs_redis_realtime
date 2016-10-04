@@ -1,0 +1,3 @@
+express
+redis
+socket.io

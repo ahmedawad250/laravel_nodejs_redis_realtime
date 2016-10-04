@@ -1,0 +1,47 @@
+/* Owl Carousel */
+.owl-carousel {
+	position: relative;
+	z-index: 1;
+	.owl-wrapper-outer {
+		border-radius: 4px;
+	}
+	.thumbnail {
+		max-width: 99%;
+	}
+	.img-responsive {
+		display: inline-block;
+	}
+}
+
+.owl-carousel-spaced {
+	margin-left: -5px;
+	.owl-item > div {
+		margin: 5px;
+	}
+}
+
+.owl-theme .owl-controls {
+	margin-top: 20px;
+	.owl-buttons div {
+		border-radius: 4px;
+		border-bottom: 2px solid transparent;
+		filter: alpha(opacity = 100);
+		opacity: 1;
+		padding: 1px 9px;
+		margin: 2px;
+	}
+}
+
+/* Owl Carousel - Highlight */
+.highlight .owl-theme .owl-controls .owl-page span {
+	background-color: #FFF;
+}
+
+/* Responsive */
+@media (max-width: 479px) {
+
+	.owl-carousel-spaced {
+		margin-left: 0;
+	}
+
+}

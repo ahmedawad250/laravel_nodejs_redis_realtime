@@ -1,0 +1,57 @@
+/* Arrows */
+.arrow {
+	background: transparent url(../img/arrows.png) no-repeat 0 0;
+	width: 47px;
+	height: 120px;
+	display: inline-block;
+	position: relative;
+	&.vtl {
+		background-position: 0 0;
+		width: 47px;
+		height: 96px;
+	}
+	&.vtr {
+		background-position: -101px 0;
+		width: 47px;
+		height: 96px;
+	}
+	&.vbl {
+		background-position: 0 -144px;
+		width: 47px;
+		height: 96px;
+	}
+	&.vbr {
+		background-position: -101px -144px;
+		width: 47px;
+		height: 96px;
+	}
+	&.hlt {
+		background-position: -209px 0;
+		width: 120px;
+		height: 47px;
+	}
+	&.hlb {
+		background-position: -209px -101px;
+		width: 120px;
+		height: 47px;
+	}
+	&.hrt {
+		background-position: -353px 0;
+		width: 120px;
+		height: 47px;
+	}
+	&.hrb {
+		background-position: -353px -101px;
+		width: 120px;
+		height: 47px;
+	}
+}
+
+/* Responsive */
+@media (max-width: 479px) {
+
+	.arrow {
+		display: none;
+	}
+
+}
