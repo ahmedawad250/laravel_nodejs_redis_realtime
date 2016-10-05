@@ -1,9 +1,8 @@
-[![Build Status](https://img.shields.io/travis/ahmedawad250/laravel_nodejs_redis_realtime.svg?style=flat-square)](https://travis-ci.org/ahmedawad250/laravel_nodejs_redis_realtime)
-[![Code Climate](https://img.shields.io/codeclimate/github/ahmedawad250/laravel_nodejs_redis_realtime.svg?style=flat-square)](https://codeclimate.com/github/cmgmyr/laravel-messenger)
-[![Latest Version](https://img.shields.io/github/release/ahmedawad250/laravel_nodejs_redis_realtime.svg?style=flat-square)](https://github.com/ahmedawad250/laravel_nodejs_redis_realtime/releases)
+[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
-
 
 # Laravel nodejs realtime
 This project will allow you to make realtime our example is sending message.
