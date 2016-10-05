@@ -14,14 +14,19 @@ This project will allow you to make realtime our example is sending message.
 ## Installation (Laravel 5.x)
 First You should run composer to install packages
 
- >composer install
- or
- >php composer.phar install
+>composer install
+or
+>php composer.phar install
+
 Second install nodejs https://nodejs.org/en/
 
-after finish install nodejs open command window and run following command to install node packages express-redis-socket.io >npm install -go to public/redis-server folder and click on redis-server.exe to run redis
+after finish install nodejs open command window and run following command to install node packages(express-redis-socket.io)
 
--go to public/nodejs folder and open command window and run following command to start nodejs >node server.js
+>npm install 
+
+*go to public/redis-server folder and click on redis-server.exe to run redis
+
+*go to public/nodejs folder and open command window and run following command to start nodejs >node server.js
 
 open two browser and call project url and try to send message and you can see the message appear in another browser
 
