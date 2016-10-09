@@ -19,26 +19,20 @@
                         <div class="col-lg-2">
                             </div>
                         <div class="col-lg-4">
-                            <form method="POST" action="{{URL::Route('message') }}">
-                                {!! csrf_field() !!}
-                                <div  class="row" >
+                                <div  class="row" id="message-content" >
                                     <div  class="form-group" >
-                                        Send Message
-                                    </div>
-                                    <div  class="form-group" >
-                                        Send Message
+                                        First Message
                                     </div>
                                 </div>
                                 <div  class="form-group" >
                                     Send Message
-                                    <input type="text" class="form-control" name="message" value="">
+                                    <input type="text" class="form-control" id="message" name="message" value="">
                                 </div>
 
 
                                 <div>
-                                    <button type="submit" class="btn btn-success">Save</button>
+                                    <button type="button" class="btn btn-success" onclick="send_message();">Send message</button>
                                 </div>
-                            </form>
                         </div>
                         <!-- /.col-lg-6 (nested) -->
 
@@ -52,4 +46,21 @@
         </div>
         <!-- /.col-lg-12 -->
     </div>
+    <script type="text/javascript">
+        function send_message() {
+            var message = $("#message").val();
+            $.post("store", {message:message,"_token": "{{ csrf_token() }}"}, function (data) {
+            });
+        }
+            var socket = io.connect('http://127.0.0.1:3000/');
+            socket.on("messages", function (data) {
+                var data = JSON.parse(data);
+                console.log(data);
+                $("#message-content").append('<div class="form-group" >'+data.message+'</div>');
+                    var args = arguments;
+                    $rootScope.$apply(function () {
+                        callback.apply(socket, args);
+                });
+            });
+    </script>
 @stop

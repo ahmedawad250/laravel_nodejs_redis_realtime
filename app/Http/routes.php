@@ -14,5 +14,5 @@
 
 //Frontend routes..
 Route::get('/', ['as' => 'message','uses' => 'Site\MainController@home']);
-Route::post('/', ['as' => 'message','uses' => 'Site\MainController@home']);
+Route::post('/store', ['as' => 'store','uses' => 'Site\MainController@store']);
 
